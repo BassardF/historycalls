@@ -7,10 +7,7 @@ import { Router, Route, DefaultRoute, Link, browserHistory }  from 'react-router
 import usersReducers from '../reducers/users'
 import mapsReducers from '../reducers/maps'
 
-import RegisterPage from './register'
 import LandingPage  from './landing'
-import MapsPage 	from './maps'
-import MapPage 		from './map'
 import RootPage		from './root'
 
 const store = createStore(combineReducers({
@@ -20,17 +17,11 @@ const store = createStore(combineReducers({
 
 render((
 	<Provider store={store}>
-	  <Router history={browserHistory} onUpdate={function() {
-	        if(typeof ga !== "undefined" && location && location.pathname){
-	        	ga('send', 'pageview', location.pathname);
-	        }
-	    }}>
+	  <Router history={browserHistory}>
 	    <Route component={RootPage}>
 	    	<Route path="/" component={LandingPage}/>
 	    	<Route path="/landing" component={LandingPage}/>
-			<Route path="/maps" component={MapsPage}/>
-			<Route path="/map/:mid" component={MapPage}/>
-			<Route path="*" component={RegisterPage}/>
+			<Route path="*" component={landing}/>
 	    </Route>
 	  </Router>
   	</Provider>
