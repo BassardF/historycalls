@@ -1,3 +1,1 @@
-# Six Strings Training
-
-Guitar training tools
+# History calls

@@ -1,14 +1,14 @@
 {
-  "name": "six strings training",
+  "name": "historycalls",
   "version": "1.0.0",
-  "description": "Guitar training tools",
+  "description": "Historical timelines",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BassardF/sixstringstraining.git"
+    "url": "https://github.com/BassardF/historycalls.git"
   },
   "keywords": [
     "Guitar",
@@ -18,9 +18,9 @@
   "author": "Frank Bassard",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BassardF/sixstringstraining/issues"
+    "url": "https://github.com/BassardF/historycalls/issues"
   },
-  "homepage": "https://github.com/BassardF/sixstringstraining",
+  "homepage": "https://github.com/BassardF/historycalls",
   "dependencies": {
     "boron": "^0.2.3",
     "firebase": "^3.9.0",

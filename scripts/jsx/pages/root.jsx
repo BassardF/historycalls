@@ -28,6 +28,7 @@ class RootPageComp extends React.Component {
 				      if(snap && snap.val() && fetchedUser){
 						this.props.replaceUser(fetchedUser);
 						if(browserHistory.getCurrentLocation().pathname == "/") browserHistory.push('/maps');
+					  }
 				    });
 				}
 			//No token
